@@ -60,8 +60,8 @@ public static final class Controller {
 	// 		.withVelocityY(getDriveRight())
 	// 		.withRotationalRate(getRotationClockwise()))); //Standard driving
 
-            HumanControls.SingleXboxController.A.whileTrue(shooter.get().Shoot(30.0, 0.0));
-			HumanControls.SingleXboxController.A.onFalse(shooter.get().Stop());
+            HumanControls.SingleXboxController.A.whileTrue(shooter.get().Shoot(-90.0, 0.0));
+			//HumanControls.SingleXboxController.A.onFalse(shooter.get().Stop());
 	}
 	
 				

@@ -68,8 +68,8 @@ public Command Shoot(double velocity, double position_hood){
     return runEnd(
         () -> {
             //m_ShooterIntake.setVoltage(5.0);
-            m_ShooterIntake.setControl(intakeRollerController.withVelocity(30));
-            m_Shooter.setControl(shooterVelocityController.withVelocity(-velocity));
+            m_ShooterIntake.setControl(intakeRollerController.withVelocity(60));
+            m_Shooter.setControl(shooterVelocityController.withVelocity(velocity));
             //m_Shooter.setVoltage(5.0);
             m_Hood.setControl(hoodAngleController.withPosition(position_hood));
         },
