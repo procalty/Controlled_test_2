@@ -19,7 +19,7 @@ public class RobotContainer {
 
   private void configureBindings(){
     //System.out.println("Bindings configured");
-    //joystick.a().whileTrue(shooter.get().Shoot(-30, 0));
+    joystick.a().whileTrue(shooter.get().Shoot(-120, 1.0));
   }
 
 

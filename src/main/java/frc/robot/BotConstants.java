@@ -63,7 +63,7 @@ public class BotConstants {
         public static final TalonFXConfiguration cfg_shooter_intake = new TalonFXConfiguration();
         public static final InterpolatingDoubleTreeMap velocityTable = new InterpolatingDoubleTreeMap();
         static{
-            cfg_shooter.Slot0.kP = 0.3;
+            cfg_shooter.Slot0.kP = 0.4;
             cfg_shooter.Slot0.kV = 0.12;
             cfg_shooter_intake.Slot0.kP = 0.3;
             cfg_shooter_intake.Slot0.kV = 0.12;
@@ -90,7 +90,10 @@ public class BotConstants {
         public static final TalonFXConfiguration cfg_Hood = new TalonFXConfiguration();
         public static final InterpolatingDoubleTreeMap shooterTable = new InterpolatingDoubleTreeMap();
         static{
-            cfg_Hood.Slot0.kP = 1.0;
+            cfg_Hood.Slot0.kP = 5;
+            cfg_Hood.Slot0.kV = 0.12;
+            cfg_Hood.MotionMagic.MotionMagicAcceleration = 20;
+            cfg_Hood.MotionMagic.MotionMagicCruiseVelocity = 50;
         }
 
         static{
